@@ -3,8 +3,10 @@ import React from 'react';
 export default function TodoItem(probs){
     return(
         <div>
-            title: {probs.title}
-            description:  {probs.description}
+            <li>
+                <span> <strong><u>title:</u></strong> {probs.title} </span>
+                <span> <strong><u>description:</u></strong> {probs.description}</span>
+            </li>
         </div>
     )
 }

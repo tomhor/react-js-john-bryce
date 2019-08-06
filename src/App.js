@@ -1,14 +1,19 @@
 import React from 'react';
 import './App.css';
-
-// import TodoItem from './components/TodoItem';
 import TodoList from './components/TodoList';
 
 function App() {
+
   return (
     <div className="App">
-      <h1> This is my code</h1>
-      <TodoList/>
+      
+      {/* ex 1 */}
+      <div>
+        <h1>React JS</h1>
+        <u><h2>ex1</h2></u>
+        <h3>get data from json file on web and print the title and description</h3>
+        <TodoList/>
+      </div>
     </div>
   );
 }

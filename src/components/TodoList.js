@@ -2,8 +2,9 @@ import React from 'react';
 
 import TodoItem from './TodoItem';
 
+
 export default class TodoList extends React.Component{
-    
+
     state = {
         data: []
     }
@@ -19,9 +20,9 @@ export default class TodoList extends React.Component{
                 <div>
                 {
                     this.state.data.map(
-                        function(singleItem) {
+                        function(singleItem,count) {
                             return(
-                            <TodoItem title = {singleItem.title} description = {singleItem.description}/>
+                                <TodoItem key ={count} title = {singleItem.title} description = {singleItem.description}/>
                             )
                         }
                     )
